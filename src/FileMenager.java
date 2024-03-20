@@ -17,8 +17,8 @@ public class FileMenager {
 
     public static void write(String text,int punkty,String fileName) {
         try {
-            FileWriter writer = new FileWriter(fileName);
-            writer.write(text + " "+ punkty "");
+            FileWriter writer = new FileWriter(fileName,true);
+            writer.write(text + " "+ punkty +"\n");
             writer.close();
         } catch (IOException e) {
             System.out.println("An error occurred while writing to the file.");

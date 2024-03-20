@@ -53,7 +53,7 @@ public class Main {
                 Widok.wyswietlWynik("Gratulacje! Wygrałeś!", punkty);
                 FileMenager.write("Punkty: ",punkty);
                 System.out.println("Zapisano tekst do pliku.");
-                FileMenager.write(gracz.getNazwa(), punkty,"najlepsi-gracze.txt")
+                FileMenager.write(gracz.getNazwa(), punkty,"najlepsi-gracze.txt");
                 break;
             } else {
                 punkty = rozgrywka.aktualizacjaPunktow(punkty);
